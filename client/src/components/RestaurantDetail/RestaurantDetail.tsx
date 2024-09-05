@@ -1,11 +1,8 @@
-import AvailableMenu from "./AvailableMenu";
 import { Badge } from "../ui/badge";
 import { Timer } from "lucide-react";
-import { useParams } from "react-router-dom";
 import heroImage from "@/assets/hero_pizza.png"
 
 const RestaurantDetail = () => {
-  const params = useParams();
 
 
 
