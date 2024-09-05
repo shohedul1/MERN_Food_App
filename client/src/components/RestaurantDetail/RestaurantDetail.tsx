@@ -1,6 +1,7 @@
 import { Badge } from "../ui/badge";
 import { Timer } from "lucide-react";
 import heroImage from "@/assets/hero_pizza.png"
+import AvailableMenu from "./AvailableMenu";
 
 const RestaurantDetail = () => {
 
@@ -34,6 +35,7 @@ const RestaurantDetail = () => {
             </div>
           </div>
         </div>
+        <AvailableMenu/>
       </div>
     </div>
   );

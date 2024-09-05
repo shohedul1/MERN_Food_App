@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto ">
             <div className="flex items-center justify-between h-14">
                 <Link to={"/"}>
-                    <h1 className="font-bold md:font-extralight text-2xl">Shohidul</h1>
+                    <h1 className="font-bold md:font-extralight text-2xl cursor-progress  ">Shohidul</h1>
                 </Link>
                 <div className="hidden md:flex items-center gap-10">
                     <div className="hidden md:flex items-center gap-6">
@@ -41,76 +41,82 @@ const Navbar = () => {
                         admin && (
                             <Menubar>
                                 <MenubarMenu >
-                                    <MenubarTrigger>Dashboard</MenubarTrigger>
+                                    <MenubarTrigger >Dashboard</MenubarTrigger>
                                     <MenubarContent className="mt-2 shadow-md p-2 rounded-md">
                                         <Link to="/admin/restaurant">
-                                            <MenubarItem className="hover:outline-none hover:bg-gray-200 p-1 rounded-sm">Restaurant</MenubarItem>
+                                            <MenubarItem className="hover:outline-none hover:bg-gray-200 p-1 rounded-sm">
+                                                Restaurant
+                                            </MenubarItem>
                                         </Link>
                                         <Link to="/admin/menu">
-                                            <MenubarItem className="hover:outline-none hover:bg-gray-200 p-1 rounded-sm ">Menu</MenubarItem>
+                                            <MenubarItem className="hover:outline-none hover:bg-gray-200 p-1 rounded-sm ">
+                                                Menu
+                                            </MenubarItem>
                                         </Link>
                                         <Link to="/admin/orders">
-                                            <MenubarItem className="hover:outline-none hover:bg-gray-200 p-1 rounded-sm ">Orders</MenubarItem>
+                                            <MenubarItem className="hover:outline-none hover:bg-gray-200 p-1 rounded-sm ">
+                                                Orders
+                                            </MenubarItem>
                                         </Link>
                                     </MenubarContent>
                                 </MenubarMenu>
                             </Menubar>
                         )
                     }
-                <div className="flex items-center gap-4">
-                    <div>
-                        <DropdownMenu>
-                            <DropdownMenuTrigger asChild>
-                                <Button variant="outline" size="icon">
-                                    <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                                    <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                                    <span className="sr-only">Toggle theme</span>
-                                </Button>
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end">
-                                <DropdownMenuItem >
-                                    Light
-                                </DropdownMenuItem>
-                                <DropdownMenuItem >
-                                    Dark
-                                </DropdownMenuItem>
-                                <DropdownMenuItem >
-                                    System
-                                </DropdownMenuItem>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
-                    </div>
-                    <Link to="/cart" className="relative cursor-pointer">
-                        <ShoppingCart />
+                    <div className="flex items-center gap-4">
+                        <div>
+                            <DropdownMenu>
+                                <DropdownMenuTrigger asChild>
+                                    <Button variant="outline" size="icon">
+                                        <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                                        <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                                        <span className="sr-only">Toggle theme</span>
+                                    </Button>
+                                </DropdownMenuTrigger>
+                                <DropdownMenuContent align="end">
+                                    <DropdownMenuItem >
+                                        Light
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem >
+                                        Dark
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem >
+                                        System
+                                    </DropdownMenuItem>
+                                </DropdownMenuContent>
+                            </DropdownMenu>
+                        </div>
+                        <Link to="/cart" className="relative cursor-pointer">
+                            <ShoppingCart />
 
-                        <Button
-                            size={"icon"}
-                            className="absolute -inset-y-3 left-2 text-xs rounded-full w-4 h-4 bg-red-500 hover:bg-red-500"
-                        >
-                            0
-                        </Button>
-                    </Link>
-                    <div>
-                        <Avatar>
-                            <AvatarImage />
-                            <AvatarFallback>CN</AvatarFallback>
-                        </Avatar>
-                    </div>
-                    <div>
-                        {false ? (
-                            <Button className="bg-orange hover:bg-hoverOrange">
-                                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                Please wait
-                            </Button>
-                        ) : (
                             <Button
-                                className="bg-orange hover:bg-hoverOrange"
+                                size={"icon"}
+                                className="absolute -inset-y-3 left-2 text-xs rounded-full w-4 h-4 bg-red-500 hover:bg-red-500"
                             >
-                                Logout
+                                0
                             </Button>
-                        )}
+                        </Link>
+                        <div>
+                            <Avatar>
+                                <AvatarImage />
+                                <AvatarFallback className="text-lime-900 font-bold animate-ping blur-[1px] cursor-zoom-in">MD:)</AvatarFallback>
+                            </Avatar>
+                        </div>
+                        <div>
+                            {false ? (
+                                <Button className="bg-orange hover:bg-hoverOrange">
+                                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                    Please wait
+                                </Button>
+                            ) : (
+                                <Button
+                                    className="bg-orange hover:bg-hoverOrange"
+                                >
+                                    Logout
+                                </Button>
+                            )}
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div className="md:hidden lg:hidden">
                     {/* Mobile responsive  */}
@@ -207,9 +213,9 @@ const MobileNavbar = () => {
                     <div className="flex flex-row items-center gap-2">
                         <Avatar>
                             <AvatarImage />
-                            <AvatarFallback>CN</AvatarFallback>
+                            <AvatarFallback className="animate-rotate-x">MD</AvatarFallback>
                         </Avatar>
-                        <h1 className="font-bold">shohidul Mernstack</h1>
+                        <h1 className="font-bold bg-lime-500">shohidul Mernstack</h1>
                     </div>
                     <SheetClose asChild>
                         {true ? (
