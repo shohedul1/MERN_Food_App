@@ -15,9 +15,7 @@ const filterOptions: FilterOptionsState[] = [
 ];
 
 const FilterPage = () => {
-    const appliedFilterHandler = (value: string) => {
 
-    };
     return (
         <div className="md:w-72">
             <div className="flex items-center justify-between">
@@ -28,8 +26,8 @@ const FilterPage = () => {
                 <div key={option.id} className="flex items-center space-x-2 my-5">
                     <Checkbox
                         id={option.id}
-                        // checked={appliedFilter.includes(option.label)}
-                        onClick={() => appliedFilterHandler(option.label)}
+                    // checked={appliedFilter.includes(option.label)}
+                    // onClick={() => appliedFilterHandler(option.label)}
                     />
                     <Label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                         {option.label}
