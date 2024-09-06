@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Search } from "lucide-react";
-import HereImage from "@/assets/hero_pizza.png";
 import { useNavigate } from "react-router-dom";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+
 
 const HereSection = () => {
   const [searchText, setSearchText] = useState<string>("");
@@ -32,12 +32,14 @@ const HereSection = () => {
           <Button onClick={() => navigate(`/search/${searchText}`)} className="bg-orange hover:bg-hoverOrange">Search</Button>
         </div>
       </div>
+
       <div>
         <img
-          src={HereImage}
+          src="/hero_pizza.png"
           alt="heroImage"
           className="object-cover w-full max-h-[500px]"
         />
+
       </div>
     </div>
   );

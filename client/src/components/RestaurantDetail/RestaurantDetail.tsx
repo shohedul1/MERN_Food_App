@@ -1,6 +1,5 @@
 import { Badge } from "../ui/badge";
 import { Timer } from "lucide-react";
-import heroImage from "@/assets/hero_pizza.png"
 import AvailableMenu from "./AvailableMenu";
 
 const RestaurantDetail = () => {
@@ -12,7 +11,7 @@ const RestaurantDetail = () => {
       <div className="w-full">
         <div className="relative w-full h-32 md:h-64 lg:h-72">
           <img
-            src={heroImage}
+            src={"/hero_pizza.png"}
             alt="res_image"
             className="object-cover w-full h-full rounded-lg shadow-lg"
           />

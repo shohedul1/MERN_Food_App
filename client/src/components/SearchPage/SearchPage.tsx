@@ -6,7 +6,7 @@ import { Badge } from "../ui/badge";
 import { Globe, MapPin, X } from "lucide-react";
 import { Card, CardContent, CardFooter } from "../ui/card";
 import { AspectRatio } from "../ui/aspect-ratio";
-import herorImage from "@/assets/hero_pizza.png"
+// import herorImage from "@/assets/hero_pizza.png"
 import FilterPage from "./FilterPage";
 
 const SearchPage = () => {
@@ -29,7 +29,7 @@ const SearchPage = () => {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
             <Button
-             
+
               className="bg-orange hover:bg-hoverOrange"
             >
               Search
@@ -73,7 +73,7 @@ const SearchPage = () => {
                 <div className="relative">
                   <AspectRatio ratio={16 / 6}>
                     <img
-                      src={herorImage}
+                      src={"/hero_pizza.png"}
                       alt=""
                       className="w-full h-full object-cover"
                     />
