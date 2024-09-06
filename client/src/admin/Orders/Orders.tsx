@@ -17,7 +17,7 @@ const Orders = () => {
             </h1>
             <div className="space-y-8">
                 {/* Restaurant Orders diplay here  */}
-                {["dsal", "asdl"].map((order) => (
+                {["dsal", "asdl"].map(() => (
                     <div className="flex flex-col md:flex-row justify-between items-start sm:items-center bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 sm:p-8 border border-gray-200 dark:border-gray-700">
                         <div className="flex-1 mb-6 sm:mb-0">
                             <h1 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
