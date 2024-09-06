@@ -1,3 +1,5 @@
+
+
 import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarTrigger } from "@radix-ui/react-menubar";
 import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
@@ -79,9 +81,6 @@ const Navbar = () => {
                                     </DropdownMenuItem>
                                     <DropdownMenuItem >
                                         Dark
-                                    </DropdownMenuItem>
-                                    <DropdownMenuItem >
-                                        System
                                     </DropdownMenuItem>
                                 </DropdownMenuContent>
                             </DropdownMenu>

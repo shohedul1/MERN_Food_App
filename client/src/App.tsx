@@ -11,6 +11,9 @@ import Success from "./components/Success/Success";
 import ForgotPassword from "./auth/ForgotPassword/ForgotPassword";
 import ResetPassword from "./auth/ResetPassword/ResetPassword";
 import VerifyEmail from "./auth/VerifyEmail/VerifyEmail";
+import Restaurant from "./admin/Restaurant/Restaurant";
+import AddMenu from "./admin/AddMenu/AddMenu";
+import Orders from "./admin/Orders/Orders";
 
 const appRouter = createBrowserRouter([
   {
@@ -36,6 +39,18 @@ const appRouter = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/admin/restaurant",
+        element: <Restaurant />,
+      },
+      {
+        path: "/admin/menu",
+        element: <AddMenu />,
+      },
+      {
+        path: "/admin/orders",
+        element: <Orders />,
       },
       {
         path: "/order/status",
